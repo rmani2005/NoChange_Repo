@@ -5,7 +5,7 @@
     <classes>
       <class name="Test.LoginTest">
         <methods>
-          <include name="maxi"/>
+          <include name="finalset"/>
           <include name="loginMethod"/>
           <include name="setup1"/>
         </methods>
