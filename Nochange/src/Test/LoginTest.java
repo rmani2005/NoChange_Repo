@@ -15,14 +15,13 @@ public class LoginTest
 	{
 		driver=new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get("http://ischolar.rsstv.com");
+		driver.get("http://google.com");
 	}
 
 		@Test
 		public void loginMethod()
 		{
-			driver.manage().window().fullscreen();
-			System.out.println("Test111111111111111111111111");
+			System.out.println("Test111111111111111111111111" + driver.getCurrentUrl());
 		}
 		
 		@Test
