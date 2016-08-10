@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19517" started-at="2016-08-10T05:52:11Z" finished-at="2016-08-10T05:52:31Z">
+  <suite name="Default suite" duration-ms="44701" started-at="2016-08-10T14:59:36Z" finished-at="2016-08-10T15:00:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19517" started-at="2016-08-10T05:52:11Z" finished-at="2016-08-10T05:52:31Z">
+    <test name="Default test" duration-ms="44701" started-at="2016-08-10T14:59:36Z" finished-at="2016-08-10T15:00:21Z">
       <class name="Test.LoginTest">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:Test.LoginTest@174d20a]" name="setup1" is-config="true" duration-ms="17157" started-at="2016-08-10T11:22:11Z" finished-at="2016-08-10T11:22:28Z">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:Test.LoginTest@32e6e9c3]" name="setup1" is-config="true" duration-ms="39176" started-at="2016-08-10T20:29:36Z" finished-at="2016-08-10T20:30:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="loginMethod()[pri:0, instance:Test.LoginTest@174d20a]" name="loginMethod" duration-ms="281" started-at="2016-08-10T11:22:28Z" finished-at="2016-08-10T11:22:29Z">
+        <test-method status="PASS" signature="loginMethod()[pri:0, instance:Test.LoginTest@32e6e9c3]" name="loginMethod" duration-ms="132" started-at="2016-08-10T20:30:15Z" finished-at="2016-08-10T20:30:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginMethod -->
-        <test-method status="PASS" signature="maxi()[pri:0, instance:Test.LoginTest@174d20a]" name="maxi" duration-ms="172" started-at="2016-08-10T11:22:29Z" finished-at="2016-08-10T11:22:29Z">
+        <test-method status="PASS" signature="maxi()[pri:0, instance:Test.LoginTest@32e6e9c3]" name="maxi" duration-ms="396" started-at="2016-08-10T20:30:15Z" finished-at="2016-08-10T20:30:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- maxi -->
-        <test-method status="PASS" signature="finalset()[pri:0, instance:Test.LoginTest@174d20a]" name="finalset" is-config="true" duration-ms="1875" started-at="2016-08-10T11:22:29Z" finished-at="2016-08-10T11:22:31Z">
+        <test-method status="PASS" signature="finalset()[pri:0, instance:Test.LoginTest@32e6e9c3]" name="finalset" is-config="true" duration-ms="4941" started-at="2016-08-10T20:30:16Z" finished-at="2016-08-10T20:30:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalset -->
