@@ -46,7 +46,7 @@ public class LoadData {
 	public Sheet getShname(String filename, String Sheetname) throws IOException
 	{
 		
-			File fi=new File("OR.PROPERTIES");
+			File fi=new File(filename);
 			FileInputStream fis = new FileInputStream(fi);
 			Workbook wb=null;
 			String fileext=filename.substring(filename.indexOf("."));
