@@ -7,7 +7,7 @@ public class FindTheObject extends ReadObjPro{
 	public String findobj(String s)
 	{
 		
-		String s
+		String str=split(s,s.indexOf(":"));
 		
 		
 		return s;
