@@ -13,7 +13,7 @@ public class ReadObjPro
 	Properties aData= new Properties();
 	public Properties getOPro() throws IOException
 	{
-	InputStream stream=new FileInputStream(new File(System.getProperty("user.dir"))+ "OBJECT.PROPERTIES");
+	InputStream stream=new FileInputStream(new File(System.getProperty("user.dir"))+ "objectRepository.properties");
 	oData.load(stream);
 	return oData;
 	}

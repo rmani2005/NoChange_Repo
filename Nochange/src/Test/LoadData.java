@@ -16,13 +16,13 @@ public class LoadData {
 		
 	}
 
-	public void readExcel(String filename, String Sheetname) throws IOException
+	public void readExcel(String path, String filename, String Sheetname) throws IOException
 	
 	{
 		Workbook wb=null;
 		
 		try{
-		File fi=new File("OR.PROPERTIES");
+		File fi=new File(path +"\\" + filename);
 		FileInputStream fis = new FileInputStream(fi);
 		String fileext=filename.substring(filename.indexOf("."));
 		if(fileext.equals(".xlsx"))
