@@ -9,7 +9,6 @@ import java.util.Properties;
 public class ReadObjPro 
 {
 
-	
 	Properties oData= new Properties();
 	Properties aData= new Properties();
 	public Properties getOPro() throws IOException

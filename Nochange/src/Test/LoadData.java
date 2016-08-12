@@ -16,15 +16,14 @@ public class LoadData {
 		
 	}
 
-	public void readExcel(String filename) throws IOException
+	public void readExcel(String filename, String Sheetname) throws IOException
 	
 	{
-		
+		Workbook wb=null;
 		
 		try{
 		File fi=new File("OR.PROPERTIES");
 		FileInputStream fis = new FileInputStream(fi);
-		Workbook wb=null;
 		String fileext=filename.substring(filename.indexOf("."));
 		if(fileext.equals(".xlsx"))
 		{
@@ -44,11 +43,11 @@ public class LoadData {
 
 	
 	public Sheet getShname(String filename, String Sheetname) throws IOException
-	{
-		
+	{	
+		Workbook wb=null;
+		try{
 			File fi=new File(filename);
 			FileInputStream fis = new FileInputStream(fi);
-			Workbook wb=null;
 			String fileext=filename.substring(filename.indexOf("."));
 			if(fileext.equals(".xlsx"))
 			{
@@ -58,6 +57,10 @@ public class LoadData {
 			{
 				wb=new HSSFWorkbook(fis);
 			}	
+		}catch(FileNotFoundException e){
+			System.out.println(e.getStackTrace());
+			}
+	
 			Sheet sh = wb.getSheet(Sheetname);
 			return sh;
 			
