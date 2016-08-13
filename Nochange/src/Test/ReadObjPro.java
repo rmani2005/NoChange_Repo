@@ -28,13 +28,13 @@ public class ReadObjPro
 		
 		public static String getTestData(String property)
 		{
-			return oData.getProperty(property);
+			return aData.getProperty(property);
 		}
 		
 
 		public static String getTestObj(String property)
 		{
-			return aData.getProperty(property);
+			return oData.getProperty(property);
 		}
 
 	public static Properties getOPro() throws IOException

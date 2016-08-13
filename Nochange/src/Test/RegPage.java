@@ -27,6 +27,11 @@ public class RegPage extends ActionLibrary {
 	this.driver=driver;
 	}
 	
+	public void loadRegPage()
+	{
+		openURL(ReadObjPro.getTestData("base_url"));
+	}
+	
 	public void registerWithValid(String name, String lastname, String phone,
 			String emailID, String add1, String add2, String city,
 			String state, String postalCode, String country,

@@ -10,19 +10,18 @@ public class RegTest
 {
 	public WebDriver driver;
 	
-	@BeforeTest
-	public void setup1()
-	{
-		driver=new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get("http://google.com");
-		//Pull//
-	}
+	
 
 		@Test
-		public void loginMethod()
+		public void validRegVerifiactionTest()
 		{
-			System.out.println("Test111111111111111111111111" + driver.getCurrentUrl());
+			RegPage rp=new RegPage(driver);
+			rp.loadRegPage();
+			
+			
+			
+			rp.registerWithValid(name, lastname, phone, emailID, add1, add2, city, state, postalCode, country, EID, pass, confirmpass);
+			assertTrue(driver.getCurrentUrl().contains("create_account_success.php"));
 		}
 		
 		@Test
