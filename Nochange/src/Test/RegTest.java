@@ -7,6 +7,8 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 import static org.testng.Assert.assertTrue;
@@ -73,17 +75,16 @@ public class RegTest extends DriverLibrary
 				for(int j = j1;j < columncount;j++)
 				{ 
 					str[j]=row.getCell(j).toString();
-					//System.out.println(row.getCell(j).toString());
+					System.out.println(row.getCell(j).toString());
 					//log.info(row.getCell(j).toString());
 				}
-				
-				RegPage rp=new RegPage(driver);
+				/*RegPage rp=new RegPage(driver);
 				rp.loadRegPage();
 				rp.registerWithValid(str[0],str[1],str[2],str[3],str[4],str[5],str[6],str[7],str[8],str[9],str[10],str[11],str[12]);
-				WebDriverWait wait=driver.wait(20, TimeUnit.SECONDS);
-				
 				Boolean yesno=  driver.getCurrentUrl().contains("create_account_success.php");
 				assertTrue(yesno);
+				WebDriverWait wait=new WebDriverWait(driver, 20);
+				wait.until(ExpectedConditions.urlContains("create_account_success.php")); */
 			}
 			}
 		}
