@@ -29,7 +29,7 @@ public class RegPage extends ActionLibrary {
 	
 	public void loadRegPage()
 	{
-		openURL(ReadObjPro.getTestData("base_url"));
+		openURL(driver, ReadObjPro.getTestData("baseurl"));
 	}
 	
 	public void registerWithValid(String name, String lastname, String phone,
@@ -37,21 +37,21 @@ public class RegPage extends ActionLibrary {
 			String state, String postalCode, String country,
 			String EID, String pass, String confirmpass )
 	{
-		typeTheValue(register_name, name);
-		typeTheValue(register_name, lastname);
-		typeTheValue(register_name, phone);
-		typeTheValue(register_name, emailID);
-		typeTheValue(register_name, add1);
-		typeTheValue(register_name, add2);
-		typeTheValue(register_name, city);
-		typeTheValue(register_name, state);
-		typeTheValue(register_name, postalCode);
-		typeTheValue(register_name, country);
-		typeTheValue(register_name, EID);
-		typeTheValue(register_name, name);
-		typeTheValue(register_name, pass);
-		typeTheValue(register_name, confirmpass);
-		clickOnElement(register_submit_button);
+		typeTheValue(driver, register_name, name);
+		typeTheValue(driver, register_lastname, lastname);
+		typeTheValue(driver, register_phone, phone);
+		typeTheValue(driver, register_emailID, emailID);
+		typeTheValue(driver, register_add1, add1);
+		typeTheValue(driver, register_add2, add2);
+		typeTheValue(driver, register_city, city);
+		typeTheValue(driver, register_state, state);
+		typeTheValue(driver, register_postalCode, postalCode);
+		typeTheValue(driver, regsiter_country, country);
+		typeTheValue(driver, register_EID, EID);
+		typeTheValue(driver, register_pass, name);
+		typeTheValue(driver, register_confirmpass, pass);
+		typeTheValue(driver, register_submit_button, confirmpass);
+		clickOnElement(driver, register_submit_button);
 	}
 
 }

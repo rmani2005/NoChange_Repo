@@ -11,10 +11,6 @@ import org.apache.poi.ss.usermodel.*;
 
 public class LoadData {
 
-	public LoadData()
-	{
-		
-	}
 
 	public void readExcel(String path, String filename, String Sheetname) throws IOException
 	

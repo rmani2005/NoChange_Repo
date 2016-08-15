@@ -34,12 +34,12 @@ public class ActionLibrary
 	}
 	
 		
-		protected void openURL(String url)
+		protected void openURL(WebDriver driver, String url)
 		{
 			driver.get(url);
 		}
 		
-		protected void clickOnElement(String eleLocator)
+		protected void clickOnElement(WebDriver driver, String eleLocator)
 		{
 			By locator=locateEle(eleLocator);
 			//WebElement findEle = driver.findElement(By.id("emailid"));
@@ -48,7 +48,7 @@ public class ActionLibrary
 				findEle.click();
 		}
 		
-		protected void typeTheValue(String eleLocator, String val)
+		protected void typeTheValue(WebDriver driver, String eleLocator, String val)
 		{
 			By locator=locateEle(eleLocator);
 			WebElement findEle=driver.findElement(locator);
@@ -56,7 +56,7 @@ public class ActionLibrary
 				findEle.sendKeys(val);
 		}
 	
-		protected String getText(String eleLocator)
+		protected String getText(WebDriver driver, String eleLocator)
 		{
 			By locator=locateEle(eleLocator);
 			WebElement findEle=driver.findElement(locator);
