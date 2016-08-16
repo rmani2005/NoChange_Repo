@@ -53,7 +53,7 @@ public class RegTest extends DriverLibrary
 		*/
 		
 		@Test
-		public void check() throws IOException
+		public void check() throws IOException, InterruptedException
 		{
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
@@ -67,7 +67,7 @@ public class RegTest extends DriverLibrary
 			int columncount = sh.getRow(1).getLastCellNum();
 			String[] str=new String[columncount];
 			
-			if (rowcount > 1){
+			if (rowcount > 0){
 			for(int i = 1; i < rowcount+1;i++)
 			{
 				XSSFRow row = sh.getRow(i);
@@ -78,13 +78,19 @@ public class RegTest extends DriverLibrary
 					System.out.println(row.getCell(j).toString());
 					//log.info(row.getCell(j).toString());
 				}
-				/*RegPage rp=new RegPage(driver);
+				RegPage rp=new RegPage(driver);
 				rp.loadRegPage();
 				rp.registerWithValid(str[0],str[1],str[2],str[3],str[4],str[5],str[6],str[7],str[8],str[9],str[10],str[11],str[12]);
 				Boolean yesno=  driver.getCurrentUrl().contains("create_account_success.php");
 				assertTrue(yesno);
 				WebDriverWait wait=new WebDriverWait(driver, 20);
-				wait.until(ExpectedConditions.urlContains("create_account_success.php")); */
+				wait.until(ExpectedConditions.urlContains("create_account_success.php"));
+				if (yesno)
+				{
+				row.getCell(13).setCellValue("Passed");
+				}
+				else {row.getCell(13).setCellValue("Failed");}
+		
 			}
 			}
 		}

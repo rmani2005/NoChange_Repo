@@ -39,13 +39,14 @@ public class ActionLibrary
 			driver.get(url);
 		}
 		
-		protected void clickOnElement(WebDriver driver, String eleLocator)
+		protected void clickOnElement(WebDriver driver, String eleLocator) throws InterruptedException
 		{
 			By locator=locateEle(eleLocator);
 			//WebElement findEle = driver.findElement(By.id("emailid"));
 			WebElement findEle = driver.findElement(locator);
 			if(findEle.isDisplayed())
 				findEle.click();
+			Thread.sleep(5000);
 		}
 		
 		protected void typeTheValue(WebDriver driver, String eleLocator, String val)

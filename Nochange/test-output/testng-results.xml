@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="38149" started-at="2016-08-15T16:16:18Z" finished-at="2016-08-15T16:16:56Z">
+  <suite name="Default suite" duration-ms="39392" started-at="2016-08-16T07:32:43Z" finished-at="2016-08-16T07:33:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="38149" started-at="2016-08-15T16:16:18Z" finished-at="2016-08-15T16:16:56Z">
+    <test name="Default test" duration-ms="39392" started-at="2016-08-16T07:32:43Z" finished-at="2016-08-16T07:33:23Z">
       <class name="Test.RegTest">
-        <test-method status="PASS" signature="preConfig()[pri:0, instance:Test.RegTest@55f3ddb1]" name="preConfig" is-config="true" duration-ms="9" started-at="2016-08-15T21:46:18Z" finished-at="2016-08-15T21:46:18Z">
+        <test-method status="PASS" signature="preConfig()[pri:0, instance:Test.RegTest@1fffcd7]" name="preConfig" is-config="true" duration-ms="32" started-at="2016-08-16T13:02:43Z" finished-at="2016-08-16T13:02:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preConfig -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:Test.RegTest@55f3ddb1]" name="setup" is-config="true" duration-ms="29080" started-at="2016-08-15T21:46:18Z" finished-at="2016-08-15T21:46:47Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:Test.RegTest@1fffcd7]" name="setup" is-config="true" duration-ms="11610" started-at="2016-08-16T13:02:43Z" finished-at="2016-08-16T13:02:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="check()[pri:0, instance:Test.RegTest@55f3ddb1]" name="check" duration-ms="6104" started-at="2016-08-15T21:46:47Z" finished-at="2016-08-15T21:46:53Z">
+        <test-method status="PASS" signature="check()[pri:0, instance:Test.RegTest@1fffcd7]" name="check" duration-ms="26314" started-at="2016-08-16T13:02:55Z" finished-at="2016-08-16T13:03:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check -->
-        <test-method status="PASS" signature="terminate()[pri:0, instance:Test.RegTest@55f3ddb1]" name="terminate" is-config="true" duration-ms="2600" started-at="2016-08-15T21:46:53Z" finished-at="2016-08-15T21:46:56Z">
+        <test-method status="PASS" signature="terminate()[pri:0, instance:Test.RegTest@1fffcd7]" name="terminate" is-config="true" duration-ms="1375" started-at="2016-08-16T13:03:21Z" finished-at="2016-08-16T13:03:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminate -->
