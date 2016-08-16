@@ -1,11 +1,9 @@
 package Test;
 
 import org.openqa.selenium.WebDriver;
-
+import Utility.Log;
 public class RegPage extends ActionLibrary {
 
-	
-	
 	WebDriver driver;
 	public String register_name=ReadObjPro.getTestObj("register_name");
 	public String register_lastname=ReadObjPro.getTestObj("register_lastname");
@@ -25,11 +23,13 @@ public class RegPage extends ActionLibrary {
 	public RegPage(WebDriver driver) 
 	{
 	this.driver=driver;
+	Log.info("New registration process has been initiated");
 	}
 	
 	public void loadRegPage()
 	{
 		openURL(driver, ReadObjPro.getTestData("baseurl"));
+		Log.info("Now the browser is displayed by navigating");
 	}
 	
 	public void registerWithValid(String name, String lastname, String phone,
@@ -37,6 +37,8 @@ public class RegPage extends ActionLibrary {
 			String state, String postalCode, String country,
 			String EID, String pass, String confirmpass )
 	{
+		Log.info("Register with valid input");
+		try{
 		typeTheValue(driver, register_name, name);
 		typeTheValue(driver, register_lastname, lastname);
 		typeTheValue(driver, register_phone, phone);
@@ -52,6 +54,13 @@ public class RegPage extends ActionLibrary {
 		typeTheValue(driver, register_confirmpass, pass);
 		typeTheValue(driver, register_submit_button, confirmpass);
 		clickOnElement(driver, register_submit_button);
+		}
+		catch(Exception e) 
+		{
+			Log.error(e.toString());
+			Log.fatal(e.getLocalizedMessage());
+			throw(e);
+		}
 	}
 
 }
