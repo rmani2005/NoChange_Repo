@@ -1,4 +1,4 @@
-package Test;
+package Utility;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -9,13 +9,14 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.poi.ss.usermodel.*;
 
-public class LoadData {
+public class Excelutil {
 
-
+	Workbook wb=null;
+	
 	public void readExcel(String path, String filename, String Sheetname) throws IOException
 	
 	{
-		Workbook wb=null;
+		
 		
 		try{
 		File fi=new File(path +"\\" + filename);
@@ -40,7 +41,7 @@ public class LoadData {
 	
 	public Sheet getShname(String filename, String Sheetname) throws IOException
 	{	
-		Workbook wb=null;
+		
 		try{
 			File fi=new File(filename);
 			FileInputStream fis = new FileInputStream(fi);

@@ -1,6 +1,9 @@
-package Test;
+package Page;
 
 import org.openqa.selenium.WebDriver;
+
+import Driver.ActionLibrary;
+import Driver.ReadObjPro;
 import Utility.Log;
 public class RegPage extends ActionLibrary {
 
@@ -18,7 +21,7 @@ public class RegPage extends ActionLibrary {
 	public String register_EID=ReadObjPro.getTestObj("register_EID");
 	public String register_pass=ReadObjPro.getTestObj("register_pass");
 	public String register_confirmpass=ReadObjPro.getTestObj("register_confirmpass");
-	public String register_submit_button = ReadObjPro.getTestObj("register");
+	public String registersubmitbutton = ReadObjPro.getTestObj("registersubmitbutton");
 	
 	public RegPage(WebDriver driver) 
 	{
@@ -35,7 +38,7 @@ public class RegPage extends ActionLibrary {
 	public void registerWithValid(String name, String lastname, String phone,
 			String emailID, String add1, String add2, String city,
 			String state, String postalCode, String country,
-			String EID, String pass, String confirmpass )
+			String EID, String pass, String confirmpass ) throws InterruptedException
 	{
 		Log.info("Register with valid input");
 		try{
@@ -52,6 +55,7 @@ public class RegPage extends ActionLibrary {
 		typeTheValue(driver, register_EID, EID);
 		typeTheValue(driver, register_pass, name);
 		typeTheValue(driver, register_confirmpass, pass);
+<<<<<<< HEAD
 		typeTheValue(driver, register_submit_button, confirmpass);
 		clickOnElement(driver, register_submit_button);
 		}
@@ -61,6 +65,9 @@ public class RegPage extends ActionLibrary {
 			Log.fatal(e.getLocalizedMessage());
 			throw(e);
 		}
+=======
+		clickOnElement(driver, registersubmitbutton);
+>>>>>>> branch 'master' of https://github.com/rmani2005/NoChange_Repo.git
 	}
 
 }
