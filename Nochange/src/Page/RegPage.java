@@ -21,7 +21,7 @@ public class RegPage extends ActionLibrary {
 	public String register_EID=ReadObjPro.getTestObj("register_EID");
 	public String register_pass=ReadObjPro.getTestObj("register_pass");
 	public String register_confirmpass=ReadObjPro.getTestObj("register_confirmpass");
-	public String registersubmitbutton = ReadObjPro.getTestObj("registersubmitbutton");
+	public String register_submit_button = ReadObjPro.getTestObj("registersubmitbutton");
 	
 	public RegPage(WebDriver driver) 
 	{
@@ -55,7 +55,6 @@ public class RegPage extends ActionLibrary {
 		typeTheValue(driver, register_EID, EID);
 		typeTheValue(driver, register_pass, name);
 		typeTheValue(driver, register_confirmpass, pass);
-<<<<<<< HEAD
 		typeTheValue(driver, register_submit_button, confirmpass);
 		clickOnElement(driver, register_submit_button);
 		}
@@ -65,9 +64,7 @@ public class RegPage extends ActionLibrary {
 			Log.fatal(e.getLocalizedMessage());
 			throw(e);
 		}
-=======
-		clickOnElement(driver, registersubmitbutton);
->>>>>>> branch 'master' of https://github.com/rmani2005/NoChange_Repo.git
+		clickOnElement(driver, register_submit_button);
 	}
 
 }

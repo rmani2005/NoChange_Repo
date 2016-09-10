@@ -24,7 +24,7 @@ public class RegTest extends DriverLibrary
 {
 	//public WebDriver driver;
 		public Logger log=Logger.getLogger(RegTest.class.getName());
-		WebDriver driver;
+		
 		
 		@BeforeTest
 		public void setup()
